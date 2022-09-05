@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Registrations.CheckFirst">
+
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ccc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Enter phone number"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/asee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ccc"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+
+            <EditText
+                android:id="@+id/check_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter phone number"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/asee"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/purple_500"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

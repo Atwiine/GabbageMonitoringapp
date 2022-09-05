@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#3C4DE7</color>
+    <color name="purple_500">#8796E7</color>
+    <color name="purple_5002">#778AF1</color>
+    <color name="purple_5003">#B9C2F2</color>
+    <color name="purple_700">#657BF2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#02B7A5</color>
+    <color name="black">#FF000000</color>
+    <color name="black2">#6B000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D30000</color>
+    <color name="red2">#E02424</color>
+    <color name="red3">#F23939</color>
+    <color name="dot_light_screen4">#590584</color>
+    <color name="order">#02B7A5</color>
+    <color name="grey_200">#EFEEEE</color>
+    <color name="grey_500">#EEECEC</color>
+    <color name="grey_700">#60605D</color>
+    <color name="numbers">#781289</color>
+    <color name="ss1">#04960B</color>
+    <color name="ss2">#DDB67A</color>
+    <color name="ss3">#CBEBCC</color>
+    <color name="ss6">#F0F6F0</color>
+    <color name="ss4">#A0ACEF</color>
+    <color name="ss5">#E49B95</color>
+    <color name="eerr1">#F44336</color>
+    <color name="eerr2">#F2C7C4</color>
+    <color name="eerr3">#F2C7C4</color>
+    <color name="eerr4">#D3D8F4</color>
+    <color name="lightblue">#FEFEFE</color>
+</resources>

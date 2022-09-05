@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Trash.SendPickUp">
+
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bb"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:onClick="back"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/bb"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Pick up form"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:id="@+id/showcoo"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Please fill in the form below and take a picture of the garbage bin to be collected and upload it to the form"
+                android:textColor="@color/purple_700"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image_preview"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/border_3"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baselines"
+                    android:visibility="gone" />
+                <!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Garbage bin picture"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/upload_image"
+                    android:layout_width="200dp"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/purple_700"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Pick image"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:background="@color/purple_700" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Book's title"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/bin_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_4"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Enter bin number"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:textColor="@color/grey_500"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:background="@color/purple_700"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Book's summary or preview"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <!--    <AutoCompleteTextView
+                            android:background="@drawable/border_2"
+                            android:id="@+id/book_summary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:padding="40dp"
+                            android:freezesText="true"
+                            android:hint="Enter book's summary or preview"
+                            android:imeOptions="actionNext"
+                            android:lines="2"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:maxLength="10000"
+                            android:nextFocusDown="@null"
+                            android:selectAllOnFocus="true"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />-->
+
+                    <EditText
+                        android:id="@+id/bin_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter bin location(In full please)"
+                        android:inputType="text|textMultiLine|textCapSentences"
+                        android:maxLines="7"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Please note that this information will be sent with your details attached for easy record keeping and follow up"
+                    android:textColor="@color/red3"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Your information will not be sold or made public "
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/book_author_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_4"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Enter book author"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:background="@color/purple_700"
+                    android:visibility="gone" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/add_product"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:onClick="submitOrder"
+                    app:cardBackgroundColor="@color/purple_700"
+                    app:cardCornerRadius="5sp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Send pick up form"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

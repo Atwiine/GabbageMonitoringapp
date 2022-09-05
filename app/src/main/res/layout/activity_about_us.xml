@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Preferences.About_us">
+
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:src="@drawable/ic_baselines"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins"
+            android:text="About us"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/purple_700" />
+                <!--<RelativeLayout
+                    android:id="@+id/asaddre"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_drop_up_24"
+                        />
+
+                    <ImageView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                        />
+
+                </RelativeLayout>-->
+                <!--  <ScrollView
+
+                      android:layout_width="match_parent"
+                      android:layout_height="200dp"
+                      android:layout_toStartOf="@id/asaddre"
+                      android:fadeScrollbars="false"
+                      >
+                      <TextView
+                          android:onClick="openAbout"
+                          android:id="@+id/textView8"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="10dp"
+                          android:fontFamily="@font/montserrat"
+                          android:padding="10dp"
+                          android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                          android:text="@string/about"
+                          android:textColor="@color/black"
+                          android:textSize="14sp" />
+                  </ScrollView>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/purple_700" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="You can reach us on"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="get the right information"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=""
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=""
+                        android:textColor="@color/purple_700"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

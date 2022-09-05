@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/balance_card"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear_no_message"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:src="@drawable/nn1"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Ooops!"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="No Internet connection found"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/no_conn"
+                app:cardBackgroundColor="@color/purple_700"
+                app:cardCornerRadius="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14sp"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+

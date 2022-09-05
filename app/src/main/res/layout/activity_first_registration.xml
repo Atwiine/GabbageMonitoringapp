@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Registrations.first_registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ewww"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/shape_login"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="backLogin"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="Create a new account"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/poppins" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/show_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Enter full names"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <EditText
+                    android:id="@+id/fullname_regist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter full name"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Enter username"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <EditText
+                    android:id="@+id/username_regist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter username"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Enter address"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <EditText
+                    android:id="@+id/address_regist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter address"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Enter assigned bin number"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBinNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter bin number"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:visibility="gone"
+                android:text="Enter the bin coordinates"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <EditText
+                        android:id="@+id/bin_location_lat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter bin latitude coordinates"
+                        android:inputType="text"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+
+                    <EditText
+                        android:id="@+id/bin_location_long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter bin longitude coordinates"
+                        android:inputType="text"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/purple_700" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reg"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="@color/purple_700"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="20dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_arrow_right_alt_24" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Already have an account"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/button17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="SIGN IN"
+                    android:textColor="@color/purple_700"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

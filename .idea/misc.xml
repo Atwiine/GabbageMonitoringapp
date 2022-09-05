@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/installatons/projects/app/src/main/res/drawable/border_5.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/app/src/main/res/drawable/circle_likes_no.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/app/src/main/res/drawable/ic_baseline_rate_review_24.xml" value="0.148" />
+        <entry key="..\:/installatons/projects/app/src/main/res/drawable/ic_baseline_restore_from_trash_24.xml" value="0.148" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_about_us.xml" value="0.1" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_app_information.xml" value="0.15" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_check_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_first_registration.xml" value="0.1" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_help.xml" value="0.1" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_login_second.xml" value="0.1" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_send_pick_up.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_settings.xml" value="0.22121896162528218" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/activity_update.xml" value="0.13693693693693693" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/no_internet.xml" value="0.20416666666666666" />
+        <entry key="..\:/installatons/projects/app/src/main/res/layout/popup_settings.xml" value="0.20416666666666666" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle.xml" value="0.1455" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_admin.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_admin2.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_admin3.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_admin4.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_delete.xml" value="0.1455" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_likes_no.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_likes_no2.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/circle_likes_no3.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.1625" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/ic_baseline_sort_24.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/ic_settings.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/drawable/s2.xml" value="0.155" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_about_us.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_add_bin.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_all_rewards.xml" value="0.17192982456140352" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_app_information.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_bin_details.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_check_first.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_first_registration.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_help.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_login_second.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_main_admin.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_manage_bins.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_manage_rewards.xml" value="0.21" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_monitor_pick_ups.xml" value="0.33" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_monitor_users.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_others_books.xml" value="0.17192982456140352" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_reports.xml" value="0.22" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_review.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_rewards.xml" value="0.22" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_send_pick_up.xml" value="0.22" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_tryitout.xml" value="0.17192982456140352" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/activity_update.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/error.xml" value="0.17192982456140352" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/error_message.xml" value="0.17192982456140352" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_area.xml" value="0.22" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_days.xml" value="0.22" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_manage_bins.xml" value="0.33" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_manage_rewards.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_monitor_pick_ups.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_monitor_users.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/item_review.xml" value="0.33" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/no_results.xml" value="0.25" />
+        <entry key="..\:/installatons/projects/garbage app/app/src/main/res/layout/right.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

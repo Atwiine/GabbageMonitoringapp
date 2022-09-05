@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Trash.Rewards">
+
+    <RelativeLayout
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bb"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:onClick="back"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/bb"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Review records"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lines"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/purple_700"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="A pack will unlock If you have made the required orders. You can claim your reward "
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/h1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/h"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Number of orders"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_pickups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/h1"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="8664"
+                        android:textColor="@color/white"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="150dp"
+                app:cardElevation="10dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="10dp"
+                     app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="@color/white"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/gift1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="10 orders"
+                            android:id="@+id/r1"
+                            android:textColor="@color/purple_700"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="20000 air time"
+                                    android:id="@+id/rr1"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+<!--                                <com.google.android.material.card.MaterialCardView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    app:cardCornerRadius="100dp"-->
+<!--                                    android:layout_margin="10dp"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    app:cardBackgroundColor="@color/purple_700"-->
+<!--                                    >-->
+                                    <TextView
+                                        android:background="@drawable/circle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="Collect reward"
+                                        android:padding="10dp"
+                                        android:layout_margin="10dp"
+                                        android:visibility="invisible"
+                                        android:id="@+id/c1"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+<!--                                </com.google.android.material.card.MaterialCardView>-->
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/purple_500"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="10dp"
+
+                            app:cardBackgroundColor="@color/white"
+                            >
+                            <LinearLayout
+                                android:id="@+id/gift2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="20 orders"
+                                    android:id="@+id/r2"
+                                    android:textColor="@color/purple_700"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="8 GB data"
+                                    android:id="@+id/rr2"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:background="@drawable/circle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Collect reward"
+                                    android:padding="10dp"
+                                    android:visibility="invisible"
+                                    android:id="@+id/c2"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/purple_500"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="10dp"
+
+                            app:cardBackgroundColor="@color/white"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/gift3"
+                                >
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="30 orders"
+                                    android:id="@+id/r3"
+                                    android:textColor="@color/purple_700"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="4G MIFI"
+                                    android:id="@+id/rr3"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:background="@drawable/circle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Collect reward"
+                                    android:padding="10dp"
+                                    android:visibility="invisible"
+                                    android:id="@+id/c3"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/purple_500"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="10dp"
+
+                            app:cardBackgroundColor="@color/white"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/gift4"
+                                >
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="40 orders"
+                                    android:id="@+id/r4"
+                                    android:textColor="@color/purple_700"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Shopping vouchers"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/rr4"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:background="@drawable/circle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Collect reward"
+                                    android:padding="10dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:visibility="invisible"
+                                    android:id="@+id/c4"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/purple_500"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="10dp"
+
+                            app:cardBackgroundColor="@color/white"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/gift5"
+                                >
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="50 orders"
+                                    android:id="@+id/r5"
+                                    android:textColor="@color/purple_700"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Full gas tank"
+                                    android:id="@+id/rr5"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:background="@drawable/circle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Collect reward"
+                                    android:padding="10dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:visibility="invisible"
+                                    android:id="@+id/c5"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/purple_500"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="10dp"
+
+                            app:cardBackgroundColor="@color/white"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/gift6"
+                                >
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="100 orders"
+                                    android:id="@+id/r6"
+                                    android:textColor="@color/purple_700"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Lexus Car"
+                                    android:id="@+id/rr6"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/purple_700"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:background="@drawable/circle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Collect reward"
+                                    android:padding="10dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:visibility="invisible"
+                                    android:id="@+id/c6"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/purple_500"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

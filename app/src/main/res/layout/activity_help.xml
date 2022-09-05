@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Preferences.HelpActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:src="@drawable/ic_baselines"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins"
+            android:text="Request help"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_helpdesks" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Welcome to our help center.\nIn case of any inquires or you need help, you can reach us on the links below"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_help_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Enter your inquiry here"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/inquiry_provided"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter inquiry"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:maxLength="21000"
+                    android:maxLines="7"
+                    android:padding="10dp"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/send_inquiry"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/purple_700"
+                    app:cardElevation="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="Send inquiry"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_phonecall" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="Call us"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/send_message_help"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_messages_help" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/poppins"
+                            android:text="Send us your inquiry"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <!--   <LinearLayout
+                   android:layout_gravity="center"
+                   android:layout_centerInParent="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   android:orientation="vertical">
+
+
+                 &lt;!&ndash;  <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:background="@color/white"
+                       android:clickable="true"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal"
+                       android:focusable="true">
+
+                       <TextView
+                           android:id="@+id/textView31"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Call us on "
+                           android:layout_margin="10dp"
+                           android:layout_gravity="center"
+                           android:fontFamily="@font/montserrat"
+                           android:textColor="@color/black"
+                           android:textSize="12sp" />
+
+                       <Button
+                           android:id="@+id/call"
+                           android:layout_width="180dp"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="+256 705 909 760"
+                           android:background="@color/purple_700"
+                           android:fontFamily="@font/montserrat"
+                           android:textColor="@color/white"
+                           android:textSize="12sp" />
+
+                   </LinearLayout>
+                   <View
+                       android:layout_width="200dp"
+                       android:layout_gravity="center"
+                       android:layout_height="0.6dp"
+                       android:layout_marginEnd="8dp"
+                       android:background="@color/purple_700" />
+
+&ndash;&gt;
+                   <LinearLayout
+                       android:id="@+id/gmail"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:background="@color/white"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="40dp"
+                           android:layout_height="30dp"
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginTop="10dp"
+                           android:src="@drawable/email" />
+
+                       <TextView
+                           android:id="@+id/textView33"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_margin="10dp"
+                           android:fontFamily="@font/montserrat"
+                           android:text="info@yitug.org"
+                           android:textColor="@color/purple_700"
+                           android:textSize="12sp" />
+
+                   </LinearLayout>
+                   <View
+                       android:layout_width="200dp"
+                       android:layout_gravity="center"
+                       android:layout_height="0.6dp"
+                       android:layout_marginEnd="8dp"
+                       android:background="@color/purple_700" />
+                   <LinearLayout
+                       android:id="@+id/fb"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:background="@color/white"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:orientation="horizontal">
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:layout_width="40dp"
+                           android:layout_height="30dp"
+                           android:layout_marginStart="8dp"
+                           android:layout_marginTop="10dp"
+                           android:src="@drawable/facebk" />
+
+                       <TextView
+                           android:id="@+id/textView34"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_margin="10dp"
+                           android:fontFamily="@font/montserrat"
+                           android:text="Empower Youth in Technology"
+                           android:textColor="@color/purple_700"
+                           android:textSize="12sp" />
+
+                   </LinearLayout>
+                   <View
+                       android:layout_width="200dp"
+                       android:layout_gravity="center"
+                       android:layout_height="0.6dp"
+                       android:layout_marginEnd="8dp"
+                       android:background="@color/purple_700" />
+                   <LinearLayout
+                       android:id="@+id/web"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:background="@color/white"
+                       android:clickable="true"
+                       android:contextClickable="true"
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:orientation="horizontal">
+
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:layout_width="40dp"
+                           android:layout_height="30dp"
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginTop="10dp"
+                           android:src="@drawable/www" />
+
+                       <TextView
+                           android:id="@+id/textView35"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_margin="10dp"
+                           android:fontFamily="@font/montserrat"
+                           android:text="www.yitug.org"
+                           android:textColor="@color/purple_700"
+                           android:textSize="12sp" />
+
+
+                   </LinearLayout>
+
+
+               </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

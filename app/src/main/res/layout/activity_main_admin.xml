@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_500"
+    android:layout_height="match_parent"
+    tools:context=".Admin.MainAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_700"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="openMenu"
+                android:src="@drawable/ic_baseline_menu_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Garbage collection app"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="6dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/purple_700"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Welcome"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Welcome"
+                        android:id="@+id/user_name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Let's keep Mbarara  city green"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <LinearLayout
+          android:layout_marginTop="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <HorizontalScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:scrollbars="horizontal"
+              >
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+                  <androidx.cardview.widget.CardView
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      app:cardElevation="30dp"
+
+                      app:cardCornerRadius="10dp"
+                      app:cardBackgroundColor="@color/ss2"
+
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          >
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              >
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Total bins"
+                                  android:layout_margin="10dp"
+                                  android:textSize="14sp"
+                                  android:textStyle="bold"
+                                  android:fontFamily="@font/poppins_medium"
+                                  android:textColor="@color/white"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="All registered bins both the functional and none functional bin"
+                                  android:layout_margin="10dp"
+                                  android:textSize="12sp"
+                                  android:textStyle="normal"
+                                  android:fontFamily="@font/poppins"
+                                  android:textColor="@color/white"
+                                  />
+
+                              <TextView
+                                  android:id="@+id/total_bins"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:fontFamily="@font/poppins_bold"
+                                  android:text="56"
+                                  android:textColor="@color/white"
+                                  android:textSize="18sp"
+                                  android:textStyle="bold" />
+
+                          </LinearLayout>
+                          <ImageView
+                              android:layout_gravity="end"
+                              android:layout_width="50dp"
+                              android:layout_height="50dp"
+                              android:src="@drawable/wastebin"
+                              />
+                      </LinearLayout>
+                  </androidx.cardview.widget.CardView>
+                  <androidx.cardview.widget.CardView
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      app:cardElevation="30dp"
+                      android:id="@+id/l_totalusers"
+                      app:cardCornerRadius="10dp"
+                      app:cardBackgroundColor="@color/ss4"
+
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          >
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              >
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Registered users"
+                                  android:layout_margin="10dp"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:fontFamily="@font/poppins_medium"
+                                  android:textColor="@color/white"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="All users that use the application"
+                                  android:layout_margin="10dp"
+                                  android:textSize="12sp"
+                                  android:textStyle="bold"
+                                  android:fontFamily="@font/poppins"
+                                  android:textColor="@color/white"
+                                  />
+
+                              <TextView
+                                  android:id="@+id/total_users"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="10dp"
+                                  android:fontFamily="@font/poppins_bold"
+                                  android:text="56"
+                                  android:textColor="@color/white"
+                                  android:textSize="18sp"
+                                  android:textStyle="bold" />
+                          </LinearLayout>
+                          <ImageView
+                              android:layout_gravity="end"
+                              android:layout_width="80dp"
+                              android:layout_height="60dp"
+                              android:src="@drawable/profile"
+                              />
+                      </LinearLayout>
+                  </androidx.cardview.widget.CardView>
+                  <androidx.cardview.widget.CardView
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      app:cardElevation="30dp"
+                      android:id="@+id/l_totalpickups"
+                      app:cardCornerRadius="10dp"
+                      app:cardBackgroundColor="@color/ss3"
+
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          >
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              >
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Total pick ups"
+                                  android:layout_margin="10dp"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:fontFamily="@font/poppins_medium"
+                                  android:textColor="@color/white"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="All pick up orders including the pending orders"
+                                  android:textSize="12sp"
+                                  android:layout_margin="10dp"
+                                  android:textStyle="bold"
+                                  android:fontFamily="@font/poppins"
+                                  android:textColor="@color/white"
+                                  />
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="300"
+                                  android:layout_marginStart="10dp"
+                                  android:textSize="18sp"
+                                  android:textStyle="bold"
+                                  android:id="@+id/total_pickups"
+                                  android:fontFamily="@font/poppins_bold"
+                                  android:textColor="@color/white"
+                                  />
+
+                          </LinearLayout>
+                          <ImageView
+                              android:layout_gravity="end"
+                              android:layout_width="80dp"
+                              android:layout_height="60dp"
+                              android:src="@drawable/garbage"
+                              />
+                      </LinearLayout>
+                  </androidx.cardview.widget.CardView>
+
+              </LinearLayout>
+          </HorizontalScrollView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              app:cardElevation="4dp"
+              app:cardCornerRadius="4dp"
+              app:cardBackgroundColor="@color/ss6"
+
+              >
+          <LinearLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="10dp"
+
+
+              >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+
+                  >
+                  <com.google.android.material.card.MaterialCardView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      app:cardElevation="20dp"
+                      android:onClick="openmanagebins"
+                      app:cardCornerRadius="10dp"
+                      app:cardBackgroundColor="@color/white"
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:background="@drawable/circle_admin"
+                          >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          >
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Manage\nbins "
+                              android:layout_margin="10dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:fontFamily="@font/poppins"
+                              android:textColor="@color/white"
+                              />
+
+                      </LinearLayout>
+                          <ImageView
+                              android:layout_gravity="end"
+                              android:layout_width="80dp"
+                              android:layout_height="60dp"
+                              android:src="@drawable/trashbin"
+                              />
+                      </LinearLayout>
+                  </com.google.android.material.card.MaterialCardView>
+                  <androidx.cardview.widget.CardView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      app:cardElevation="20dp"
+                      android:layout_margin="10dp"
+                      app:cardCornerRadius="10dp"
+                      android:onClick="openmonitorRecords"
+                      app:cardBackgroundColor="@color/white"
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:background="@drawable/circle_admin2"
+                          >
+                          <LinearLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+
+                              >
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Monitor\nPick up orders"
+                                  android:layout_margin="10dp"
+                                  android:textSize="16sp"
+                                  android:textStyle="bold"
+                                  android:fontFamily="@font/poppins"
+                                  android:textColor="@color/white"
+                                  />
+                          </LinearLayout>
+                          <ImageView
+                              android:layout_gravity="end"
+                              android:layout_width="80dp"
+                              android:layout_height="60dp"
+                              android:src="@drawable/monitor"
+                              />
+                      </LinearLayout>
+                  </androidx.cardview.widget.CardView>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="6dp"
+                  >
+              <androidx.cardview.widget.CardView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  app:cardElevation="20dp"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="start"
+                  app:cardCornerRadius="10dp"
+                  android:onClick="openRewards"
+                  app:cardBackgroundColor="@color/white"
+                  >
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="@drawable/circle_admin3"
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+
+                          >
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Assign\nRewards"
+                              android:layout_margin="10dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:fontFamily="@font/poppins"
+                              android:textColor="@color/white"
+                              />
+                      </LinearLayout>
+                      <ImageView
+                          android:layout_gravity="end"
+                          android:layout_width="80dp"
+                          android:layout_height="60dp"
+                          android:src="@drawable/gift"
+                          />
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+              <androidx.cardview.widget.CardView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  app:cardElevation="20dp"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="start"
+                  app:cardCornerRadius="10dp"
+                  android:onClick="openmonitorusers"
+                  app:cardBackgroundColor="@color/white"
+                  >
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                          android:background="@drawable/circle_admin4"
+                      >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+
+                          >
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Monitor\nUsers"
+                              android:layout_margin="10dp"
+                              android:textSize="16sp"
+                              android:textStyle="bold"
+                              android:fontFamily="@font/poppins"
+                              android:textColor="@color/white"
+                              />
+                      </LinearLayout>
+                      <ImageView
+                          android:layout_gravity="end"
+                          android:layout_width="80dp"
+                          android:layout_height="60dp"
+                          android:src="@drawable/profile"
+                          />
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+          </LinearLayout>
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
